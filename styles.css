@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+  opacity: 0;
+  animation: fadeInBody 1.5s ease forwards;
+}
+
+@keyframes fadeInBody {
+  to { opacity: 1; }
+}
+
 * {
     box-sizing: border-box;
   }
 
 h1 {
     font-size: 45px;
-    color: rgba(0, 0, 0, 0.735);
+    color: #000000bb;
     font-weight: 500;
     animation: slide-in 2200ms ease-in-out;
     margin-top: -0.5em;
@@ -16,6 +25,9 @@ h2 {
     font-size: 35px;
     color: rgba(0, 0, 0, 0.735);
     font-weight: 500;
+}
+
+.slide-in {
     animation: slide-in 2500ms ease-in-out;
 }
 
@@ -24,8 +36,16 @@ h3 {
     font-weight: 500;
 }
 
+.big-text{
+    font-size: 64px;
+}
+
 .smaller-p {
     font-size: 16px;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 a {
@@ -50,6 +70,18 @@ body {
     
 }
 
+.columns.is-multiline {
+  align-items: stretch;
+}
+
+.column .box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 
 .bio {
     font-size: 16px;
@@ -57,7 +89,15 @@ body {
 
 
 .grey-text {
-    color: grey;
+    color: #9b9b9b;
+}
+
+hr {
+  border: none;               /* remove any default borders */
+  height: 2px;                /* set thickness */
+  background-color: #c1c1c1;  /* set your preferred color */
+  margin: 2rem 0;             /* spacing around it */
+   animation: slide-in-right 2000ms;
 }
 
 
@@ -123,7 +163,7 @@ ul {
 
 
 
-.navbar {
+.custom-navbar {
     position: sticky;
     top: 0;
     max-height: 100svh;
@@ -134,6 +174,15 @@ ul {
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     z-index: 999;
 }
+
+.custom-navbar a {
+  color: black;
+  text-decoration: none;
+}
+.custom-navbar a:hover {
+  color: orange;
+}
+
 
 .nav-list {
     display: flex;
@@ -184,6 +233,51 @@ ul {
     padding-right: 2%;
     justify-content: center;
     align-items: center;
+}
+
+.main-proj-container {
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3em;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-container {
+    margin-left: 10em;
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.half-about {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100em;
+}
+
+.roles-about {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100em;
+    margin-top: 12.5em;
+}
+
+.section {
+    display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; 
 }
 
 .text-on-left {
@@ -273,6 +367,7 @@ ul {
     flex-direction: column;
     gap: 50px;
     justify-content: center;
+    outline: green 3px solid;
 }
 
 .projects-container a {
@@ -283,8 +378,16 @@ ul {
     transform: translateX(+1.5rem);
 }
 
+.projects-row { 
+    outline: red 3px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
 .project-indiv {
     height: 100%;
+    width: 40%;
     padding-left: 5%;
     background-color: rgba(238, 238, 238, 0.516);
     display: flex;
@@ -368,6 +471,16 @@ ul {
         opacity: 1;
     }
 }
+@keyframes slide-in-right {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
 
 
 
@@ -381,7 +494,7 @@ ul {
         display: inline-block;
     }
 
-    .navbar {
+    .custom-navbar {
         height: 50px;
         justify-content: center;
         width: 100vw;
