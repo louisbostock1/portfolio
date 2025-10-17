@@ -20,13 +20,13 @@
 
 <body>
 
-   <!-- Navbar -->
+  <!-- Navbar -->
   <nav class="custom-navbar">
     <!-- Sidebar (mobile) -->
     <ul class="sidebar">
       <li class="cross-button" onclick="hideSidebar()">
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
-          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
         </svg>
       </li>
       <li><a href="index.html" onclick="hideSidebar()">Home</a></li>
@@ -47,7 +47,7 @@
       <!-- Hamburger -->
       <li class="menu-button" onclick="showSidebar()">
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
-          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
         </svg>
       </li>
     </ul>
@@ -60,9 +60,15 @@
     <div class="about-container">
       <div class="half-about">
         <p class="bold">ABOUT THE PROJECT</p>
-      <p class="big-text">Creating a <br>Narrative Website</p>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus.</p>
+        <p class="big-text">Creating a <br>Narrative Website</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+          dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+          Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
+          sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+          Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+          Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus.
+        </p>
       </div>
       <div class="roles-about">
         <p class="bold">Role</p>
@@ -71,7 +77,7 @@
           Web developer
         </p>
         <br>
-         <p class="bold">Client</p>
+        <p class="bold">Client</p>
         <p>University project
         </p>
         <br>
@@ -79,6 +85,9 @@
         <p>September 2023
         </p>
       </div>
+    </div>
+    <div class="focus-img-container">
+      <div class="focus-img"><img src="img/barca-focus-1.png" alt=""></div>
     </div>
   </div>
 
@@ -91,27 +100,28 @@
 
 
 
+
   <script>
-function showSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.add('show');
-}
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.add('show');
+    }
 
-function hideSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.remove('show');
-}
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.remove('show');
+    }
 
-// Active link highlighting
-const nav = document.querySelector(".custom-navbar");
-const navLinks = nav.querySelectorAll("a");
-const currentURL = window.location.href;
-navLinks.forEach((link) => {
-  if (link.href === currentURL) {
-    link.classList.add("active");
-  }
-});
-</script>
+    // Active link highlighting
+    const nav = document.querySelector(".custom-navbar");
+    const navLinks = nav.querySelectorAll("a");
+    const currentURL = window.location.href;
+    navLinks.forEach((link) => {
+      if (link.href === currentURL) {
+        link.classList.add("active");
+      }
+    });
+  </script>
 
 </body>
 

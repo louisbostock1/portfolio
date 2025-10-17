@@ -259,7 +259,7 @@ ul {
 ======================================================= */
 
 .main-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -298,14 +298,14 @@ ul {
   display: flex;
   flex-direction: column;
   width: 55%;
-  height: 100em;
+  height: 100%;
 }
 
 .roles-about {
   display: flex;
   flex-direction: column;
   width: 40%;
-  height: 100em;
+  height: 100%;
   margin-top: 12.5em;
 }
 
@@ -437,6 +437,24 @@ ul {
 }
 
 
+.focus-img-container {  
+    background-color: #A50044;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.focus-img {
+    padding: 10%;
+}
+
+
+
+
 /* =======================================================
    ANIMATIONS
 ======================================================= */
@@ -519,6 +537,10 @@ ul {
   .hideOnMobile {
     display: none;
   }
+
+    .focus-img-container {
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -558,7 +580,7 @@ ul {
 
   .main-container {
     flex-direction: column;
-    height: 60em;
+    height: 100%;
   }
 
   .column-container {
@@ -594,4 +616,8 @@ ul {
   .big-text {
     font-size: 50px;
   }
+
+  .focus-img-container {
+        height: 400px;
+    }
 }
