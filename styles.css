@@ -178,6 +178,7 @@ ul {
 .custom-navbar a {
   color: black;
   text-decoration: none;
+  margin-left: 2em;
 }
 .custom-navbar a:hover {
   color: orange;
@@ -528,7 +529,7 @@ ul {
     .main-container {
         flex-direction: column;
         justify-content: top;
-        height: 100%;
+        height: 60em;
     }
 
     .column-container {
