@@ -258,17 +258,17 @@ ul {
    MAIN CONTENT
 ======================================================= */
 
-.main-container {
-  height: 100%;
-  width: 100%;
+
+  .main-container {
   display: flex;
-  flex-direction: row;
-  gap: 10%;
-  padding-left: 2%;
-  padding-right: 2%;
+  flex-wrap: wrap;       /* allow items to stack on small screens */
   justify-content: center;
   align-items: center;
+  gap: 2rem;             /* flexible spacing instead of fixed % */
+  padding: 2%;
+  width: 100%;
 }
+
 
 .main-proj-container {
   min-height: 100%;
@@ -602,6 +602,7 @@ ul {
   .main-container {
     flex-direction: column;
     height: 100%;
+
   }
 
   .column-container {
