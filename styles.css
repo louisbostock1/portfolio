@@ -543,7 +543,13 @@ ul {
   font-weight: bold;
   border-radius: 4px;
   margin-top: 1rem;
+  cursor: pointer;
 }
+
+.red-box:active {
+  animation: spinPop 1.4s ease-in-out;
+}
+
 
 .blue-box {
   background-color: #004D98;
@@ -602,6 +608,19 @@ ul {
   100% {
     transform: translate(0, -0px);
   }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 0px #10b981; }
+  50% { box-shadow: 0 0 20px 5px #34d399; }
+  100% { box-shadow: 0 0 0px #10b981; }
+}
+
+
+@keyframes spinPop {
+  0% { transform: scale(1) rotate(0); }
+  50% { transform: scale(1.1) rotate(10deg); }
+  100% { transform: scale(1) rotate(0); }
 }
 
 @keyframes slide-in {
