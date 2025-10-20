@@ -660,8 +660,18 @@ ul {
 
   .menu-button {
     display: block;
-    margin-left: 80%;
-    margin-top: 30%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 0;
+  }
+
+  .custom-navbar {
+    position: relative; /* So .menu-button positions inside it */
+  }
+
+  .sidebar {
+    width: 100%;
   }
 
   .hideOnMobile {
