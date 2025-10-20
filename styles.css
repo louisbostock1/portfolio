@@ -333,6 +333,9 @@ ul {
 
 .title-container {
   height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .img-on-right {
@@ -714,9 +717,10 @@ ul {
   }
 
   .img-on-right {
-    width: 50%;
-    margin-top: 4em;
+    width: 100%;
+    margin-top: 8em;
     margin-bottom: 2em;
+    padding: 2rem;
   }
 
   .main-container {
@@ -808,5 +812,9 @@ ul {
 
   .title-cta {
     margin: 0;
+  }
+
+  .title-container {
+    display: block;
   }
 }
