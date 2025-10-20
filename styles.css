@@ -789,7 +789,7 @@ ul {
     width: 100%;
   }
 
-  .title-container {
+  .proj-title-container {
     flex-direction: column;
     height: 20rem;
     gap: 2rem;
