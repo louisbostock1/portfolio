@@ -712,7 +712,7 @@ ul {
   .main-container {
     flex-direction: column;
     height: 100%;
-
+    margin-top: 3rem;
   }
 
   .column-container {
