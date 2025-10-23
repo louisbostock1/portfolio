@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* =======================================================
    THEME VARIABLES
@@ -462,7 +463,6 @@ ul {
   padding: 2em;
   margin-top: 2rem;
   box-sizing: border-box;
-  background-color: #A50044;
 }
 
 
@@ -579,6 +579,33 @@ ul {
   margin-top: 1rem;
 }
 
+.kg-green {
+  background-color: #0e3723;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.kg-orange {
+  background-color: #dd5a3a;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.kg-cream {
+  background-color: #fffef7;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
 
 
 
@@ -615,7 +642,6 @@ ul {
   50% { box-shadow: 0 0 20px 5px #34d399; }
   100% { box-shadow: 0 0 0px #10b981; }
 }
-
 
 @keyframes spinPop {
   0% { transform: scale(1) rotate(0); }
