@@ -606,6 +606,37 @@ ul {
   margin-top: 1rem;
 }
 
+.contact-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-card h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #0078ff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.email-link i {
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.email-link:hover {
+  color: #0056b3;
+}
+
 
 
 
@@ -735,6 +766,10 @@ ul {
 @media screen and (max-width: 800px) {
   body {
     display: inline-block;
+  }
+
+  .contact-card {
+    margin: 10%;
   }
 
   .custom-navbar {

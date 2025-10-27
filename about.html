@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LB</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LB</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-     <!-- Navbar -->
+
+  <!-- Navbar -->
   <nav class="custom-navbar">
     <!-- Sidebar (mobile) -->
     <ul class="sidebar">
@@ -43,15 +47,66 @@
     </ul>
   </nav>
 
+  <!-- Main content (example from experience page) -->
+  <div class="column-container">
+    <div class="row-container">
+      <div class="text-container">
+        <p>Marathon Runner
+          <br>Manchester Marathon - 4h: 15m: 46s
+          <br><span class="grey">27th April 2025</span>
+        </p>
+        <hr><br>
+        <p class="smaller-p">
+          On April 27th, 2025, I ran the Manchester Marathon after months of dedicated training. The journey tested my endurance, discipline, and determination. <br><br>Crossing the finish line was an incredible moment of pride and accomplishment, reflecting all the early mornings, long runs, and unwavering commitment that led to achieving this personal milestone.
 
+        </p>
+      </div>
+      <div class="img-cont">
+        <div class="portrait-img-container">
+          <img class="uni-img" src="img/marathon.jpeg" alt="">
+        </div>
+      </div>
+    </div>
 
-   
+    <div class="row-container">
+      <div class="text-container">
+        <p>Chairman of <i>MMU Running</i>
+          <br>Manchester Metropolitan University Run Club
+          <br><span class="grey">Since February 2025</span>
+        </p>
+        <hr><br>
+        <p class="smaller-p">
+          I was elected chairman of MMU Running for two consecutive years, leading a thriving community of over 80 regular runners.
+          
+          <br><br>I managed 3 weekly sessions and organised large-scale events for more than 500 members in our WhatsApp group, fostering teamwork, motivation, and a welcoming environment for runners of all abilities.
+        </p>
+      </div>
+      <div class="img-cont">
+        <div class="portrait-img-container">
+          <img class="shop-img" src="img/mmurun.jpeg" alt="">
+        </div>
+      </div>
+    </div>
 
+    <div class="row-container">
+      <div class="text-container">
+        <p>Guitarist / Music Hobbyist 
+        </p>
+        <hr><br>
+        <p class="smaller-p">
+         Playing since age 10, Grade 6 certified, I enjoy playing for friends and family.
+        </p>
+      </div>
+      <div class="img-cont">
+        <div class="portrait-img-container">
+          <img class="profile-img" src="img/guitar.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-
-
+  <!-- JS -->
+  
   <script>
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
@@ -73,8 +128,6 @@ navLinks.forEach((link) => {
   }
 });
 </script>
-
-    
 
 </body>
 </html>
