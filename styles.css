@@ -7,8 +7,8 @@
 :root {
   /* Light mode (default) */
   --bg-color: #f7f7f7;
-  --text-color: #000;
-  --heading-color: #000000bb;
+  --text-color: #121212;
+  --heading-color: #121212;
   --subheading-color: rgba(0, 0, 0, 0.735);
   --link-color: #000;
   --link-hover: orange;
