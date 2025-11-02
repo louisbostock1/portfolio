@@ -298,7 +298,6 @@ ul {
 .dt-text-img-container {
   display: flex;
   flex-direction: row;
-  border: red 3px solid;
   gap: 8%;
 }
 
