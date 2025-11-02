@@ -840,7 +840,7 @@ ul {
   .dt-text-img-container {
     flex-direction: column;
     width: 100%;
-    padding: 2%;
+    padding: 5%;
     gap: 2em;
   }
 
