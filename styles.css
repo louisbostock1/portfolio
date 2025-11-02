@@ -292,6 +292,19 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-right: 3em;
+}
+
+.dt-text-img-container {
+  display: flex;
+  flex-direction: row;
+  border: red 3px solid;
+  gap: 8%;
+}
+
+.dt-text {
+  display: flex;
+  align-items: center;
 }
 
 .hero-img {
@@ -647,12 +660,13 @@ ul {
 }
 
 
-  .ticker {
+.ticker {
   width: 100%;
   overflow: hidden;   
   color: #fff;
   box-sizing: border-box;
   padding: 10px 0;
+  margin-bottom: 5em;
 }
 
 .ticker-content {
@@ -819,6 +833,27 @@ ul {
     position: relative;
   }
 
+  .design-thinking-container {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .dt-text-img-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    gap: 2em;
+  }
+
+  .dt-img {
+    justify-content: center;
+    display: flex;
+  }
+
+  .ticker {
+    margin-top: 2em;
+  }
+
   .projects-container {
     position: absolute;
     margin-top: 30px;
@@ -861,6 +896,9 @@ ul {
   .main-proj-container {
     margin-left: 0;
   }
+
+
+  
 
   .about-container {
     flex-direction: column;
