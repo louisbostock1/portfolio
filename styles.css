@@ -285,6 +285,22 @@ ul {
   margin-left: -3em;
 }
 
+.contact-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
+
+
+.contact-card {
+  transition: transform 330ms ease-in-out;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
 .design-thinking-container {
   min-height: 100%;
   min-width: 100%;
@@ -635,10 +651,6 @@ ul {
   text-align: center;
 }
 
-.contact-card h2 {
-  margin-bottom: 1rem;
-  color: #333;
-}
 
 .email-link {
   display: inline-flex;
@@ -661,7 +673,7 @@ ul {
 
 .ticker {
   width: 100%;
-  overflow: hidden;   
+  overflow: hidden;
   color: #fff;
   box-sizing: border-box;
   padding: 10px 0;
@@ -670,7 +682,8 @@ ul {
 
 .ticker-content {
   display: flex;
-  width: max-content;     /* fit both copies */
+  width: max-content;
+  /* fit both copies */
   animation: scroll 20s linear infinite;
 }
 
@@ -678,17 +691,24 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2.5em;             /* spacing between items */
+  gap: 2.5em;
+  /* spacing between items */
   margin-left: 2.5em;
 }
 
 .ticker:hover .ticker-content {
-  animation-play-state:paused  /* optional pause on hover */
+  animation-play-state: paused
+    /* optional pause on hover */
 }
 
 @keyframes scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 
@@ -722,15 +742,31 @@ ul {
 }
 
 @keyframes glow {
-  0% { box-shadow: 0 0 0px #10b981; }
-  50% { box-shadow: 0 0 20px 5px #34d399; }
-  100% { box-shadow: 0 0 0px #10b981; }
+  0% {
+    box-shadow: 0 0 0px #10b981;
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px #34d399;
+  }
+
+  100% {
+    box-shadow: 0 0 0px #10b981;
+  }
 }
 
 @keyframes spinPop {
-  0% { transform: scale(1) rotate(0); }
-  50% { transform: scale(1.1) rotate(10deg); }
-  100% { transform: scale(1) rotate(0); }
+  0% {
+    transform: scale(1) rotate(0);
+  }
+
+  50% {
+    transform: scale(1.1) rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+  }
 }
 
 @keyframes slide-in {
@@ -799,7 +835,8 @@ ul {
   }
 
   .custom-navbar {
-    position: relative; /* So .menu-button positions inside it */
+    position: relative;
+    /* So .menu-button positions inside it */
   }
 
   .sidebar {
@@ -821,9 +858,12 @@ ul {
     display: inline-block;
   }
 
-  .contact-card {
-    margin: 10%;
+  .contact-cards-container {
+    flex-direction: column;
+    margin-top: 30%;
+    gap: 2em;
   }
+
 
   .custom-navbar {
     height: 100px;
@@ -897,7 +937,7 @@ ul {
   }
 
 
-  
+
 
   .about-container {
     flex-direction: column;
