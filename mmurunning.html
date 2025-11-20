@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LB</title>
 
   <!-- 🧱 Load Bulma first -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
-  >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
 
   <!-- 🖋️ Then load fonts and icons -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"
-  >
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <!-- 🎨 Finally, your custom CSS last so it overrides Bulma -->
   <link rel="stylesheet" href="styles.css">
@@ -27,44 +20,125 @@
 
 <body>
   <!-- Navbar -->
-    <nav class="custom-navbar">
-        <!-- Sidebar (mobile) -->
-        <ul class="sidebar">
-            <li class="cross-button" onclick="hideSidebar()">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
-                    fill="currentColor">
-                    <path
-                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                </svg>
-            </li>
-            <li><a href="index.html" onclick="hideSidebar()">Home</a></li>
-            <li><a href="projects.html" onclick="hideSidebar()">Projects</a></li>
-            <li><a href="design.html" onclick="hideSidebar()">Design Thinking</a></li>
-            <li><a href="experience.html" onclick="hideSidebar()">Experience</a></li>
-            <li><a href="about.html" onclick="hideSidebar()">About</a></li>
-            <li><a href="contact.html" onclick="hideSidebar()">Contact</a></li>
-        </ul>
+  <nav class="custom-navbar">
+    <!-- Sidebar (mobile) -->
+    <ul class="sidebar">
+      <li class="cross-button" onclick="hideSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </li>
+      <li><a href="index.html" onclick="hideSidebar()">Home</a></li>
+      <li><a href="projects.html" onclick="hideSidebar()">Projects</a></li>
+      <li><a href="design.html" onclick="hideSidebar()">Design Thinking</a></li>
+      <li><a href="experience.html" onclick="hideSidebar()">Experience</a></li>
+      <li><a href="about.html" onclick="hideSidebar()">About</a></li>
+      <li><a href="contact.html" onclick="hideSidebar()">Contact</a></li>
+    </ul>
 
-        <!-- Main navbar links -->
-        <ul class="nav-list">
-            <li class="hideOnMobile"><a href="index.html">Home</a></li>
-            <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
-            <li class="hideOnMobile"><a href="design.html">Design Process</a></li>
-            <li class="hideOnMobile"><a href="experience.html">Experience</a></li>
-            <li class="hideOnMobile"><a href="about.html">About</a></li>
-            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+    <!-- Main navbar links -->
+    <ul class="nav-list">
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+      <li class="hideOnMobile"><a href="design.html">Design Process</a></li>
+      <li class="hideOnMobile"><a href="experience.html">Experience</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
 
-            <!-- Hamburger -->
-            <li class="menu-button" onclick="showSidebar()">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
-                    fill="currentColor">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                </svg>
-            </li>
-        </ul>
-    </nav>
+      <!-- Hamburger -->
+      <li class="menu-button" onclick="showSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+      </li>
+    </ul>
+  </nav>
 
-    
+  <div class="main-proj-container">
+    <div class="hero-img">
+      <img src="img/mmurun-hero.svg" alt="">
+    </div>
+
+    <div class="visual-container">
+      <p class="bold">ABOUT THE PROJECT</p>
+      <div class="proj-title-container">
+        <p class="big-text">Social Media Manager<br>University Run Club</p>
+        <a class="title-cta" href="https://instagram.com/mmurunning" target="_blank"> See for yourself <i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+      <div class="subtitles-container">
+        <div class="subtitle">
+          <p>
+            I first joined MMU Running in January 2024 as their Social Media Manager, a role in which I not only managed
+            the social media accounts such as Instagram & TikTok, but also curated professional content to be used
+            across
+            multiple platforms.
+            <br><br>
+            I ensured brand consistency, designed the logo which is still in use today & even fascilitated the creation
+            of merch for our committee and run club members.
+            <br><br>
+            Following an election with our 500+ members, I was voted in as Chairman in January 2025 and have retained
+            that role since, across two academic years.
+          </p>
+        </div>
+        <div class="subtitle">
+          <p class="bold">ROLE</p>
+          <p>Social Media Manager
+            <br>
+            Chairman
+          </p>
+          <br>
+          <p class="bold">CLIENT</p>
+          <p>MMU Running
+          </p>
+          <br>
+          <p class="bold">DATE</p>
+          <p>January 2024 - Present
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="focus-img-container" style="background-color: #002F6C;">
+      <div class="focus-img"><img src="img/joinrun.png" alt=""></div>
+    </div>
+
+    <div class="visual-container">
+      <p class="big-text">Visual Identity</p>
+      <div class="subtitles-container">
+        <div class="subtitle">
+          <p class="bold">Creating sporty, exciting branding with inspiration from the colours used by our university to
+            show </p>
+        </div>
+        <div class="subtitle">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure enim doloremque, quae nemo beatae cum!</p>
+        </div>
+      </div>
+      <div class="typography-colours">
+        <div class="typography">
+          <p class="bold">TYPOGRAHY</p>
+          <p class="bold big-text" style="font-family: League Gothic;">League Gothic <br> MMU RUNNING <br> Aa123 </p>
+        </div>
+        <div class="colours">
+          <p class="bold">COLOURS</p>
+          <div class="mmu-run-colours" style="background-color: #002F6C ;">
+            <p>#002F6C</p>
+          </div>
+          <div class="mmu-run-colours" style="background-color: #FF6A00;">
+            <p>#FF6A00</p>
+          </div>
+          <div class="black-box">#121212</div>
+        </div>
+      </div>
+    </div>
+    <div class="focus-img-container" style="background-color: #002F6C;" s>
+      <div class="focus-img"><img src="img/run-collection.png" alt=""></div>
+    </div>
+  </div>
 
 
 
@@ -78,33 +152,39 @@
 
 
 
-   
+
+
+
+
+
+
   <script>
-function showSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.add('show');
-}
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.add('show');
+    }
 
-function hideSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.remove('show');
-}
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.remove('show');
+    }
 
-// Active link highlighting
-const nav = document.querySelector(".custom-navbar");
-const navLinks = nav.querySelectorAll("a");
-const currentURL = window.location.href;
-navLinks.forEach((link) => {
-  if (link.href === currentURL) {
-    link.classList.add("active");
-  }
-});
-</script>
-
-
+    // Active link highlighting
+    const nav = document.querySelector(".custom-navbar");
+    const navLinks = nav.querySelectorAll("a");
+    const currentURL = window.location.href;
+    navLinks.forEach((link) => {
+      if (link.href === currentURL) {
+        link.classList.add("active");
+      }
+    });
+  </script>
 
 
-    
+
+
+
 
 </body>
+
 </html>

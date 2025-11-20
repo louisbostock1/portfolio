@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic:wdth@75..100&display=swap');
 
 /* =======================================================
    THEME VARIABLES
@@ -636,6 +637,14 @@ ul {
 
 .kg-cream {
   background-color: #fffef7;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.mmu-run-colours {
   color: white;
   padding: 1rem 2rem;
   font-weight: bold;
