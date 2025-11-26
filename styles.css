@@ -527,6 +527,35 @@ ul {
   height: 800px;
 }
 
+.wide-text-container {
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 3em;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.wide-container {
+  width: 100%;
+}
+
+.kpi-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.kpi-row ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+
+
 .proj-title-container {
   display: flex;
   flex-direction: row;
