@@ -39,6 +39,11 @@
    GLOBAL STYLES
 ======================================================= */
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   opacity: 0;
   animation: fadeInBody 1.5s ease forwards;
@@ -106,8 +111,20 @@ h3 {
   color: #9b9b9b;
 }
 
+em {
+  color: green;
+}
+
+.emr {
+  color: rgb(145, 2, 2);
+}
+
 .grey {
   color: grey;
+}
+
+.red-text {
+  color: rgb(155, 0, 0);
 }
 
 /* =======================================================
@@ -291,6 +308,7 @@ ul {
   flex-direction: row;
   gap: 5em;
 }
+
 
 
 
@@ -499,7 +517,7 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 2em;
-  margin-top: 2rem;
+  margin-top: 3em;
   box-sizing: border-box;
 }
 
@@ -523,8 +541,6 @@ ul {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5%;
-  height: 800px;
 }
 
 .wide-text-container {
@@ -540,6 +556,32 @@ ul {
 .wide-container {
   width: 100%;
 }
+
+.skip-to-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  gap: 5%;
+}
+
+.skip-btn {
+  background-color: #014235;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.skip-btn:hover {
+  background-color: #00856a;
+}
+
 
 .kpi-row {
   display: flex;
@@ -593,6 +635,7 @@ ul {
   flex-direction: row;
   width: 100%;
   gap: 10%;
+  margin-top: 5em;
 }
 
 .typography {
