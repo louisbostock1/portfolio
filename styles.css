@@ -569,7 +569,6 @@ ul {
 }
 
 .skip-btn {
-  background-color: #014235;
   color: white;
   padding: 10px 15px;
   text-decoration: none;
@@ -595,6 +594,7 @@ ul {
   margin: 0;
   flex: 1;
 }
+
 
 
 
