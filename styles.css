@@ -936,7 +936,9 @@ ul {
 
 @media screen and (max-width: 800px) {
   body {
-    display: inline-block;
+    display: block;
+    grid-template-columns: none;
+    gap: 0;
   }
 
   .contact-cards-container {
@@ -944,6 +946,34 @@ ul {
     margin-top: 30%;
     gap: 2em;
   }
+
+  .skip-to-container {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .skip-btn {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .kpi-row {
+    flex-direction: column;
+  }
+
+  .wide-text-container {
+    margin: 2rem;
+  }
+
+  .typography-colours {
+    margin-top: 2rem;
+  }
+
+  .hero-img {
+    min-height: 0;
+  }
+
+
 
 
   .custom-navbar {
