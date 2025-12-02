@@ -18,7 +18,6 @@
   --hr-color: #c1c1c1;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --negative-color: #9a2424;
-
 }
 
 /* Dark mode overrides (auto based on system) */
@@ -958,6 +957,8 @@ ul {
   .skip-btn {
     font-size: 14px;
     text-align: center;
+    align-items: center;
+    display: flex;
   }
 
   .kpi-row {
