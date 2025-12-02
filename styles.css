@@ -1072,7 +1072,7 @@ ul {
   }
 
   .big-text {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   .focus-img-container {
@@ -1117,7 +1117,8 @@ ul {
 
   .proj-title-container {
     flex-direction: column;
-    height: 20rem;
+    height: 100%;
+    margin-bottom: 2rem;
     gap: 2rem;
     align-items: start;
   }
