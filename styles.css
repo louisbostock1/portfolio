@@ -290,7 +290,7 @@ ul {
   align-items: center;
   gap: 2rem;
   /* flexible spacing instead of fixed % */
-  padding: 2%;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -1107,6 +1107,10 @@ ul {
 
   .typography {
     margin-top: 2rem;
+    width: 100%;
+  }
+
+  .text-on-left {
     width: 100%;
   }
 
