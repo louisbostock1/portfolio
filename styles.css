@@ -735,6 +735,10 @@ ul {
   margin-top: 1rem;
 }
 
+.contact-cards-container {
+  justify-content: center;
+}
+
 .contact-card {
   background: #fff;
   padding: 2rem;
