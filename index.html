@@ -1,120 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LB</title>
-
-  <!-- 🧱 Load Bulma first -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-
-  <!-- 🖋️ Then load fonts and icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-  <!-- 🎨 Finally, your custom CSS last so it overrides Bulma -->
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Louis Bostock — Digital Product Designer</title>
+<meta name="description" content="Louis Bostock — Digital Product Designer based in Manchester. UX design and frontend development portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <!-- Navbar -->
-  <nav class="custom-navbar">
-    <!-- Sidebar (mobile) -->
-    <ul class="sidebar">
-      <li class="cross-button" onclick="hideSidebar()">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
-          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-        </svg>
-      </li>
-      <li><a href="index.html" onclick="hideSidebar()">Home</a></li>
-      <li><a href="projects.html" onclick="hideSidebar()">Projects</a></li>
-      <li><a href="design.html" onclick="hideSidebar()">Design Thinking</a></li>
-      <li><a href="experience.html" onclick="hideSidebar()">Experience</a></li>
-      <li><a href="about.html" onclick="hideSidebar()">About</a></li>
-      <li><a href="contact.html" onclick="hideSidebar()">Contact</a></li>
-    </ul>
+<!-- SIDEBAR -->
+<nav class="sidebar" id="sidebar">
+  <div class="nav-brand">
+    <span class="nav-brand-name">Louis Bostock</span>
+    <span class="nav-brand-sub">Digital Product Designer</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="design.html">Design Process</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-footer">
+    <p>Manchester, UK<br>Available for opportunities</p>
+  </div>
+</nav>
 
-    <!-- Main navbar links -->
-    <ul class="nav-list">
-      <li class="hideOnMobile"><a href="index.html">Home</a></li>
-      <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
-      <li class="hideOnMobile"><a href="design.html">Design Process</a></li>
-      <li class="hideOnMobile"><a href="experience.html">Experience</a></li>
-      <li class="hideOnMobile"><a href="about.html">About</a></li>
-      <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+<!-- MOBILE TOGGLE -->
+<button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation">
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+    <rect y="3" width="18" height="1.5" rx="1" fill="currentColor"/>
+    <rect y="8.25" width="18" height="1.5" rx="1" fill="currentColor"/>
+    <rect y="13.5" width="18" height="1.5" rx="1" fill="currentColor"/>
+  </svg>
+</button>
 
-      <!-- Hamburger -->
-      <li class="menu-button" onclick="showSidebar()">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
-          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-        </svg>
-      </li>
-    </ul>
-  </nav>
+<!-- MAIN -->
+<main class="main">
 
-
-
-  <div class="main-container">
-    <div class="text-on-left">
-      <div class="title-container">
-        <h2 class="slide-in">LOUIS</h2>
-        <h1>BOSTOCK</h1>
-        <p class="grey-text">Digital Product Designer based in Manchester, UK.</p>
-        <hr>
-        <div class="bio">I’m driven to create digital experiences that feel clear, intuitive, and easy to use. I care
-          about building interfaces that make interactions smooth and features accessible to everyone. <br><br>
-          At the end of the day, my work is about improving usability and crafting experiences that are both enjoyable
-          and efficient for the people who use them.
-        <br><br>
-          <i class="fa-solid fa-circle-info"></i> - This site is a WIP; some content may update on each visit.</div>
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-tag">Portfolio 2026</span>
+    <h1 class="hero-name">Louis<br><em>Bostock</em></h1>
+    <div class="hero-rule"></div>
+    <p class="hero-bio">
+      I design digital experiences that are <strong>clear, intentional, and built to work.</strong>
+      Bridging UX design and frontend development — from research and wireframes through to
+      production code.
+      <br><br>
+      BSc Web &amp; UX Design, Manchester Metropolitan University.
+      Currently open to graduate Digital Product Designer roles.
+    </p>
+    <div class="hero-ctas">
+      <a href="projects.html" class="btn-primary">View Projects &nbsp;→</a>
+      <a href="contact.html" class="btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Years freelancing</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Portfolio projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Live client sites</div>
       </div>
     </div>
-    <div class="img-on-right">
-      <div class="profile-img-container">
-        <picture>
-          <source srcset="img/louiux-logo-dark.png" media="(prefers-color-scheme: dark)">
-          <source srcset="img/louiux-logo.png" media="(prefers-color-scheme: light)">
-          <img class="profile-img" src="img/louiux-logo.png" alt="">
-        </picture>
+    <span class="hero-scroll"></span>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span class="marquee-item">UX Design <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Frontend Development <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Figma <span class="marquee-dot"></span></span>
+        <span class="marquee-item">User Research <span class="marquee-dot"></span></span>
+        <span class="marquee-item">HTML &amp; CSS <span class="marquee-dot"></span></span>
+        <span class="marquee-item">JavaScript <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Prototyping <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Responsive Design <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Design Systems <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Information Architecture <span class="marquee-dot"></span></span>
+      </div>
+      <div class="marquee-inner" aria-hidden="true">
+        <span class="marquee-item">UX Design <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Frontend Development <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Figma <span class="marquee-dot"></span></span>
+        <span class="marquee-item">User Research <span class="marquee-dot"></span></span>
+        <span class="marquee-item">HTML &amp; CSS <span class="marquee-dot"></span></span>
+        <span class="marquee-item">JavaScript <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Prototyping <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Responsive Design <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Design Systems <span class="marquee-dot"></span></span>
+        <span class="marquee-item">Information Architecture <span class="marquee-dot"></span></span>
       </div>
     </div>
   </div>
 
+  <!-- SELECTED WORK -->
+  <section class="section-work">
+    <div class="section-header">
+      <div>
+        <p class="section-eyebrow">Selected Work</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <a href="projects.html" class="section-link">All projects →</a>
+    </div>
+    <div class="work-list">
+      <a href="kg.html" class="work-item">
+        <span class="work-num">01</span>
+        <div class="work-info">
+          <div class="work-title">Knowles Green — Wine Shop</div>
+          <div class="work-meta">Freelance Client · 2023–Present</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag tag-dev">Dev</span>
+          <span class="tag tag-ux">UX</span>
+        </div>
+        <span class="work-arrow">↗</span>
+      </a>
+      <a href="low-carbon.html" class="work-item">
+        <span class="work-num">02</span>
+        <div class="work-info">
+          <div class="work-title">Low Carbon Design — Web Redesign</div>
+          <div class="work-meta">University Project · 2024</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag tag-ux">UX</span>
+          <span class="tag tag-dev">Dev</span>
+        </div>
+        <span class="work-arrow">↗</span>
+      </a>
+      <a href="mmurunning.html" class="work-item">
+        <span class="work-num">03</span>
+        <div class="work-info">
+          <div class="work-title">MMU Running — Brand &amp; Social</div>
+          <div class="work-meta">Society Leadership · 2023–2024</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag tag-brand">Brand</span>
+        </div>
+        <span class="work-arrow">↗</span>
+      </a>
+      <a href="barcelona.html" class="work-item">
+        <span class="work-num">04</span>
+        <div class="work-info">
+          <div class="work-title">Barcelona Travel Guide — Editorial Web</div>
+          <div class="work-meta">University Project · 2023</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag tag-dev">Dev</span>
+          <span class="tag tag-ux">UX</span>
+        </div>
+        <span class="work-arrow">↗</span>
+      </a>
+      <a href="portfolio.html" class="work-item">
+        <span class="work-num">05</span>
+        <div class="work-info">
+          <div class="work-title">This Portfolio — Design &amp; Build</div>
+          <div class="work-meta">Personal Project · Ongoing</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag tag-dev">Dev</span>
+          <span class="tag tag-ux">UX</span>
+        </div>
+        <span class="work-arrow">↗</span>
+      </a>
+    </div>
+  </section>
 
+  <!-- ABOUT STRIP -->
+  <div class="about-strip">
+    <div class="about-strip-text">
+      <p class="section-eyebrow" style="margin-bottom:1rem;">About</p>
+      <p>
+        I'm Louis — a designer and frontend developer finishing my degree at Manchester Met.
+        I care about making interfaces that actually work for people, not just ones that look
+        good in a mockup.
+      </p>
+      <p>
+        My edge is that I can design it <em style="color:var(--accent-2);font-style:normal;font-weight:500;">and</em> build it.
+        I've worked across UX research, interaction design, HTML/CSS/JS development,
+        and email marketing — on both freelance and in-house projects.
+      </p>
+      <a href="about.html" class="btn-ghost" style="margin-top:1.5rem;display:inline-flex;">Read more →</a>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cell">
+        <div class="skill-cell-label">Design</div>
+        <div class="skill-cell-items">Figma<br>User research<br>Wireframing<br>Prototyping</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-cell-label">Development</div>
+        <div class="skill-cell-items">HTML / CSS<br>JavaScript<br>Responsive<br>Git</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-cell-label">Tools</div>
+        <div class="skill-cell-items">VS Code<br>Mailchimp<br>Shopify<br>Salesforce</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-cell-label">Soft Skills</div>
+        <div class="skill-cell-items">Client comms<br>Presentations<br>Iteration<br>Critique</div>
+      </div>
+    </div>
+  </div>
 
+</main>
 
+<script>
+  const toggle = document.getElementById('navToggle');
+  const sidebar = document.getElementById('sidebar');
+  toggle.addEventListener('click', () => sidebar.classList.toggle('open'));
 
-  <script>
-    function showSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.classList.add('show');
-    }
-
-    function hideSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.classList.remove('show');
-    }
-
-    // Active link highlighting
-    const nav = document.querySelector(".custom-navbar");
-    const navLinks = nav.querySelectorAll("a");
-    const currentURL = window.location.href;
-    navLinks.forEach((link) => {
-      if (link.href === currentURL) {
-        link.classList.add("active");
-      }
-    });
-  </script>
-
-
-
-
-
-
-
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.href === location.href) a.classList.add('active');
+    else a.classList.remove('active');
+  });
+</script>
 </body>
-
 </html>
